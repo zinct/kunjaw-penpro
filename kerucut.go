@@ -1,17 +1,15 @@
 package main
 
-import (
-	"fmt"
-	"math/big"
-)
+import "fmt"
 
 func main() {
-	var a, b = 3, 12;
+  var r, t, hasil float64
+  phi := 3.14
 
-	fmt.Scan(&a, &b)
+  fmt.Scan(&r, &t)
 
-	r, _ := new(big.Float).SetPrec(3).SetString("3")
+  hasil = r * r * phi * 1 / 3 * t
 
-	fmt.Print((1.0/3.0)*3.14*(a*a*b))
-	
+  fmt.Print(hasil)
+
 }
